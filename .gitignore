@@ -1,4 +1,4 @@
 venv/*
-API.txt
+API*.txt
 *.png
 data.json
