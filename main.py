@@ -49,4 +49,6 @@ def handle_text(message):
 
     bot.send_photo(ChatId, open(f'{file_name}.png', 'rb'))
 
+    os.remove(f'{file_name}.png')
+
 bot.polling(none_stop=True, interval=0)
