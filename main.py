@@ -22,7 +22,8 @@ openai.api_key = API_KEY_GPT
 
 @bot.message_handler(commands=["start"])
 def start(m, res=False):
-    bot.send_message(m.chat.id, 'Привет! ' + str(m.from_user.username) + ' Я на связи. Какую картинку нарисуем? )')
+    bot.send_message(m.chat.id, 'Привет! ' + str(m.from_user.username))
+    bot.send_message(m.chat.id, ' Я на связи. Какую картинку нарисуем?')
 
 @bot.message_handler(content_types=["text"])
 def handle_text(message):
